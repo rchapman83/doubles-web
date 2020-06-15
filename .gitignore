@@ -1,4 +1,40 @@
-_site/
+# extensions
+*.so
+*.rbc
+*.sassc
+*.bak
+*.log
+
+# Files
+Gemfile.lock
+.bundle
+.yardoc
+.rvmrc
+.rspec
+.DS_Store
+.jekyll-metadata
+
+# Distribution / packaging / dirs
 .sass-cache/
 .jekyll-cache/
-.jekyll-metadata
+_preview/
+downloads/
+eggs/
+pkg/
+test/
+tmp/
+lib/bundler/man
+pkg/
+/.bundle
+log/
+bkup/
+backup/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
