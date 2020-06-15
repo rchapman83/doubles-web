@@ -32,9 +32,8 @@ jobs:
     
     # Update package managers   
     - name: Step 2
-      run: |
-        gem update bundler
-        sudo npm install -g npm@latest
+      run: gem update bundler
+        #sudo npm install -g npm@latest
         
     # Check versions    
     - name: Step 3
