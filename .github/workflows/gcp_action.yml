@@ -7,6 +7,7 @@ name: CI
 on:
   pull_request:
     branches: [ master ]
+    branches-ignore: [ staging ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,12 +20,26 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      env:
+          FBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
     # Runs a single command using the runners shell
     - name: Step 1
       run: echo Begin deployment...
-
+      
+    - name: Step 2
+      run: ruby -v
+    
+    - name: Step 3
+      run: bundle --version
+    
+    - name: Step 4
+      run: bundle install
+    
+    - name: Step 5
+      run: npm -v
+      
       #"$FIREBASE_TOKEN"
-    - name: Setp 2
+    - name: Step 5
       run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
 
