@@ -25,20 +25,30 @@ jobs:
     # Runs a single command using the runners shell
     - name: Step 1
       run: echo Begin deployment...
-      
+    
+    # Install   
     - name: Step 2
-      run: ruby -v
+      run: | 
+        npm install
+        gem install bundler
+        gem install jekyll
     
     - name: Step 3
-      run: bundle --version
+      run: |
+        bundle --version 
+        npm -v
+        ruby -v
     
     - name: Step 4
       run: bundle install
     
     - name: Step 5
-      run: npm -v
+      run: npm install -g firebase-tools
+  
+    - name: Step 6
+      run: bundle exec jekyll build --verbose
       
       #"$FIREBASE_TOKEN"
-    - name: Step 5
-      run: firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+    - name: Step 7
+      run: firebase deploy --token $FBASE_TOKEN --non-interactive
 
