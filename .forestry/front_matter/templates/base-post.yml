@@ -22,7 +22,7 @@ fields:
   type: text
   config:
     required: false
-    min: 1
+    min: 
   label: Heading
   description: Page header.
 - name: published
