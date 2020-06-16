@@ -1,4 +1,42 @@
 ---
 label: Base Page
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+  description: Values could be default, page, post or custom layouts in the _layout
+    dir.
+  hidden: false
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: Page title.
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+  description: Page header.
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+  description: 'Subtitle or secondary heading. '
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Permalink
+  description: Link in the URI. For example /XYZ/ permalink in domain.com/XYZ.
+- name: published
+  type: boolean
+  label: Published
+  description: Set to off if you don’t want a specific post to show up when the site
+    is generated.
+  default: false
