@@ -38,9 +38,9 @@ social:
   links:
     - https://github.com/rchapman83/doubles-web/
 
-#jekyll-archives:
-#  enabled:
-#    - "categories"
+jekyll-archives:
+  enabled:
+    - "categories"
 
 # Build settings
 theme: minima
@@ -49,6 +49,7 @@ plugins:
   - jekyll-seo-tag # https://github.com/jekyll/jekyll-seo-tag
   - jekyll-archives # https://github.com/jekyll/jekyll-archives
   - jekyll-sitemap # https://github.com/jekyll/jekyll-sitemap
+  - jekyll-menus # https://github.com/forestryio/jekyll-menus
 
 social_icons:
   - Facebook
