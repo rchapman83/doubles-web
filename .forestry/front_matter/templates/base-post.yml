@@ -1,4 +1,40 @@
 ---
 label: Base Post
 hide_body: false
-fields: []
+fields:
+- name: layout
+  type: text
+  config:
+    required: false
+  label: Layout
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: published
+  type: boolean
+  label: Published
+  default: false
+- name: date
+  type: datetime
+  label: Date
+  description: Date of post.
+  config:
+    required: false
+    date_format: MM/DD/YYYY
+    time_format: h:mm A ZZ
+    display_utc: false
+    export_format: MM/DD/YYYY h:mm A ZZ
+  default: now
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: One or multiple tags can be added to a post in the format of a space-separated
+    string.
