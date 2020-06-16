@@ -5,7 +5,8 @@ fields:
 - name: layout
   type: text
   config:
-    required: false
+    required: true
+    min: 1
   label: Layout
   description: Values could be default, page, post or custom layouts in the _layout
     dir.
@@ -13,27 +14,32 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
+    min: 1
   label: Title
   description: Page title.
 - name: heading
   type: text
   config:
     required: false
+    min: 1
   label: Heading
   description: Page header.
 - name: subtitle
   type: text
   config:
     required: false
+    min: 1
   label: Subtitle
   description: 'Subtitle or secondary heading. '
 - name: permalink
   type: text
   config:
     required: false
+    min: 1
   label: Permalink
   description: Link in the URI. For example /XYZ/ permalink in domain.com/XYZ.
+  default: "/XYZ"
 - name: published
   type: boolean
   label: Published
