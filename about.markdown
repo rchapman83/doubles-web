@@ -13,13 +13,3 @@ You can find the source code for Minima at GitHub:
 You can find the source code for Jekyll at GitHub:
 [jekyll](https://github.com/jekyll) /
 [jekyll](https://github.com/jekyll/jekyll)
-
-hey hey hey bigger and better I think, how about you?
-
-changing it again for deploy test hhhhgff
-
-cant we try again please apparently need a bigger change
-
-fhfshsht yo yo 1 2 need some more tests here yup yup
-
-I need another change. take 2 change it up yo, change is here
