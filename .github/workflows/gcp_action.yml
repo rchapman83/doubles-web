@@ -17,19 +17,26 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      # START
+    - name: Step 1
+      run: echo Begin deployment...
+      
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     
     # Ruby setup https://github.com/ruby/setup-ruby
-    - uses: ruby/setup-ruby@v1
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
       with:
         ruby-version: 2.6 
         bundler-cache: true 
-
-    # Runs a single command using the runners shell
-    - name: Step 1
-      run: echo Begin deployment...
     
+    # Node setup https://github.com/actions/setup-node 
+    - name: Setup NodeJS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '12'
+        
     # Update package managers   
     - name: Step 2
       run: gem update bundler
@@ -44,11 +51,14 @@ jobs:
         
     # Install Google Firebase tools
     - name: Step 4
-      run: sudo npm install -g firebase-tools
+      run: |
+        sudo npm install firebase-functions@latest 
+        sudo npm install firebase-admin@latest 
+        sudo npm install -g firebase-tools
     
     # Install functions
-    - name: Step 5
-      run: sudo npm install -g --silent functions/package.json
+    #- name: Step 5
+     # run: sudo npm install -g --silent functions/package.json
       
     # Kick off a build of Jekyll pages
     - name: Step 6
