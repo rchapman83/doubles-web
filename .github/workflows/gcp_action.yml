@@ -41,14 +41,14 @@ jobs:
         bundle --version 
         npm -v
         ruby -v
-      
-    # Install functions
-    - name: Step 4
-      run: sudo npm install functions/package.json
         
     # Install Google Firebase tools
-    - name: Step 5
+    - name: Step 4
       run: sudo npm install -g firebase-tools
+    
+    # Install functions
+    - name: Step 5
+      run: sudo npm install -g --silent functions/package.json
       
     # Kick off a build of Jekyll pages
     - name: Step 6
