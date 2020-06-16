@@ -4,7 +4,7 @@ layout: page
 title: Profiles
 heading: Profies
 subtitle: Profiles
-published: false
+published: true
 
 ---
 Profiles yo
