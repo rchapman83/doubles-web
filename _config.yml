@@ -38,9 +38,9 @@ social:
   links:
     - https://github.com/rchapman83/doubles-web/
 
-#jekyll-archives:
-#  enabled:
-#    - "categories"
+jekyll-archives:
+  enabled:
+    - "categories"
 
 # Build settings
 theme: minima
