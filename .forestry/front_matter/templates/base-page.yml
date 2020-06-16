@@ -22,14 +22,14 @@ fields:
   type: text
   config:
     required: false
-    min: 1
+    min: 
   label: Heading
   description: Page header.
 - name: subtitle
   type: text
   config:
     required: false
-    min: 1
+    min: 
   label: Subtitle
   description: 'Subtitle or secondary heading. '
 - name: permalink
