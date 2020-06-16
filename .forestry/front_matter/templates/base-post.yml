@@ -48,5 +48,3 @@ fields:
   label: Categories
   description: One or multiple tags can be added to a post in the format of a space-separated
     string.
-pages:
-- _posts/first-post.md
