@@ -5,22 +5,32 @@ fields:
 - name: layout
   type: text
   config:
-    required: false
+    required: true
+    min: 1
   label: Layout
+  description: Values could be default, page, post or custom layouts in the _layout
+    dir.
+  default: post
 - name: title
   type: text
   config:
-    required: false
+    required: true
+    min: 1
   label: Title
+  description: Page title.
 - name: heading
   type: text
   config:
     required: false
+    min: 1
   label: Heading
+  description: Page header.
 - name: published
   type: boolean
   label: Published
   default: false
+  description: Set to off if you don’t want a specific post to show up when the site
+    is generated.
 - name: date
   type: datetime
   label: Date
