@@ -38,50 +38,31 @@ jobs:
         node-version: '12'
         
     # Update package managers   
-    - name: Step 2
-      run: gem update bundler
-        #sudo npm install -g npm@latest
+    - name: Update pkg managers
+      run: |
+        gem update bundler
+        sudo npm install -g npm@latest
         
     # Check versions    
-    - name: Step 3
+    - name: Check version
       run: |
         bundle --version 
         npm -v
         ruby -v
         
     # Install Google Firebase tools
-    - name: Step 4
+    - name: Install Firebase tools
       run: |
         sudo npm install firebase-functions@latest 
         sudo npm install firebase-admin@latest 
         sudo npm install -g firebase-tools
-    
-    # Install functions
-    #- name: Step 5
-     # run: sudo npm install -g --silent functions/package.json
       
     # Kick off a build of Jekyll pages
-    - name: Step 6
+    - name: Jekyll build
       run: bundle exec jekyll build --verbose
     
-  #  - name: Download Artifact
-   #   uses: actions/download-artifact@v2
-    #  with:
-     #   name: dist
-      #  path: dist
-
-    #- name: Deploy to Firebase
-     # uses: w9jds/firebase-action@master
-      #with:
-       # args: deploy --only hosting
-      #env:
-       # FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-
-
-      
-      #"$FIREBASE_TOKEN"
-    - name: Step 7
+      # Deploy to firebase
+    - name: Deploy to Firebase
       run: firebase deploy --token "$FIREBASE_TOKEN" --non-interactive
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-     
