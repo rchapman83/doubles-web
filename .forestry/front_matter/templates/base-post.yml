@@ -42,10 +42,10 @@ fields:
     display_utc: false
     export_format: MM/DD/YYYY h:mm A ZZ
   default: now
-- name: tags
+- name: categories
   type: tag_list
   default: []
-  label: Tags
+  label: Categories
   description: One or multiple tags can be added to a post in the format of a space-separated
     string.
 pages:
