@@ -33,7 +33,7 @@ jobs:
     
     # Node setup https://github.com/actions/setup-node 
     - name: Setup NodeJS
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v1
       with:
         node-version: '12'
         
