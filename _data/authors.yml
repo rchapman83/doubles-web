@@ -1,8 +1,11 @@
 ---
-Rowan:
-  picture: /uploads/rowan.png
+authors:
+  Rowan:
+  name: "Rowan Chapman"
+  image: /uploads/rowan.png
   twitter: rchapman83
 
 Jackson:
-  picture: /uploads/jack.png
+  name: "Jackson Crowe"
+  image: /uploads/jack.png
   twitter: 
