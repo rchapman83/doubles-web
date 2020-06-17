@@ -57,5 +57,6 @@ fields:
   description: Add this page to robot.txt.
   default: true
 pages:
+- blog.md
 - index.md
 - profiles.md

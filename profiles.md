@@ -4,9 +4,20 @@ layout: page
 title: Profiles
 heading: Profies
 subtitle: Profiles
-published: true
 sitemap: true
 robots-allow: true
 
 ---
-Profiles yo
+Profiles yo - 
+
+Belly:
+card 1
+
+Tez: 
+card 2
+
+Jack: 
+card 3
+
+Rowan:
+card 4

@@ -7,5 +7,7 @@ title: 'First Post '
 heading: yup, first one
 robots-allow: false
 sitemap: false
+published: true
+author: ''
 
 ---

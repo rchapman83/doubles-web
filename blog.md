@@ -1,0 +1,32 @@
+---
+permalink: "/blog"
+sitemap: true
+robots-allow: true
+layout: page
+title: Blog
+heading: Blog
+subtitle: Post here
+published: true
+
+---
+<section class="diagonal">
+	<div class="blog-post text-container">
+		{% include post-title.html post=page %}
+		<div class="post-content">
+		
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="text-container">
+		<h2>Next post</h2>
+		<div class="blog-post">
+			{% if page.next %}
+				{% include post-summary.html post=page.next %}
+			{% elsif page.previous %}
+				{% include post-summary.html post=page.previous %}
+			{% endif %}
+		</div>
+	</div>
+</section>
