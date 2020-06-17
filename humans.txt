@@ -1,0 +1,18 @@
+
+# humanstxt.org/
+# The humans responsible:
+
+# TEAM
+
+    Rowan Chapman -- @rchapman83
+    Jackson Crowe -- @jackonstoke
+
+# THANKS
+
+    Rowan Chapman
+    Jackson Crowe
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3,
+    Markdown, Jekyll
