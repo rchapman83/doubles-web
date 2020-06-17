@@ -1,7 +1,7 @@
 ---
 permalink: "/"
 layout: page
-title: Doubles.Cards
+title: Home
 heading: front page
 subtitle: doubles web what what
 sitemap: true

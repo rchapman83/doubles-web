@@ -13,7 +13,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Doubles
+title: Doubles.Cards
 tagline: yah good
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -29,17 +29,32 @@ logo: uploads/logo.png
 humans: humans.txt
 encoding: UTF-8
 google_analytics_key:
+google_site_verification:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Author details for the jekyll-seo-tag gem
-site.data.authors
+author: Rowan
+
+twitter:
+  username: rchapman83
+  card: summary
 
 # Social details for the jekyll-seo-tag gem
 social:
   name: Doubles App
   links:
     - https://github.com/rchapman83/doubles-web/
+
+#facebook:
+#  app_id: 1234
+#  publisher: 1234
+#  admins: 1234
+
+seo:
+  name: Doubles App
+  type: brand
+  description: test desc
 
 
 jekyll-archives:
