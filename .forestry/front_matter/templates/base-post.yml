@@ -48,5 +48,14 @@ fields:
   label: Categories
   description: One or multiple tags can be added to a post in the format of a space-separated
     string.
+- name: robots-allow
+  type: boolean
+  label: Robots
+  description: A toggle to add page to robots.txt.
+  default: false
+- name: sitemap
+  type: boolean
+  label: Sitemap
+  description: Toggle to add this page to the sitemap.xml.
 pages:
 - _posts/2020-06-14-.md
