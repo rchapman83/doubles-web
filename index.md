@@ -8,3 +8,8 @@ sitemap: true
 robots-allow: true
 
 ---
+<section>
+	<div>
+        Home sweet home
+    </div>
+</section>

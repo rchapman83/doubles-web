@@ -1,24 +1,13 @@
 ---
 layout: page
 ---
-<section class="diagonal">
-	<div class="blog-post text-container">
-		{% include post-title.html post=page %}
-		<div class="post-content">
-			{{ content }}
-		</div>
+<section>
+	<div {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		{% if page.heading %}
+			<h2>{{ page.heading }}</h2>
+		{% elsif page.title %}
+			<h2>{{ page.title }}</h2>
+		{% endif %}
 	</div>
 </section>
-
-<section class="diagonal alternate">
-	<div class="text-container">
-		<h2>Next post</h2>
-		<div class="blog-post">
-			{% if page.next %}
-				{% include post-summary.html post=page.next %}
-			{% elsif page.previous %}
-				{% include post-summary.html post=page.previous %}
-			{% endif %}
-		</div>
-	</div>
-</section>
+{{ content }}	
