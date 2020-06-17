@@ -1,7 +1,7 @@
 ---
 permalink: "/"
 layout: page
-title: Index
+title: Doubles.Cards
 heading: front page
 subtitle: doubles web what what
 published: true
