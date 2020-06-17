@@ -70,3 +70,5 @@ fields:
       path: 
   label: Author
   description: Select an author for the blog post.
+pages:
+- _posts/2020-06-14-First-post.md
