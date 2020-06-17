@@ -6,7 +6,7 @@ layout: page
 title: Blog
 heading: Blog
 subtitle: Post here
-published: false
+published: true
 
 ---
 I will list all posts here
