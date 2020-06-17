@@ -1,0 +1,59 @@
+---
+label: Base Post
+hide_body: false
+fields:
+- name: layout
+  type: text
+  config:
+    required: true
+    min: 1
+  label: Layout
+  description: Values could be default, page, post or custom layouts in the _layout
+    dir.
+  default: post
+- name: title
+  type: text
+  config:
+    required: true
+    min: 1
+  label: Title
+  description: Page title.
+- name: heading
+  type: text
+  config:
+    required: false
+    min: 
+  label: Heading
+  description: Page header.
+- name: date
+  type: datetime
+  label: Date
+  description: Date of post.
+  config:
+    required: false
+    date_format: YYYY/MM/DD
+    time_format: h:mm A ZZ
+    display_utc: false
+    export_format: YYYY/MM/DD h:mm A ZZ
+  default: now
+- name: categories
+  type: tag_list
+  default: []
+  label: Categories
+  description: One or multiple tags can be added to a post in the format of a space-separated
+    string.
+- name: robots-allow
+  type: boolean
+  label: Robots
+  description: A toggle to add page to robots.txt.
+  default: false
+- name: sitemap
+  type: boolean
+  label: Sitemap
+  description: Toggle to add this page to the sitemap.xml.
+- name: published
+  type: boolean
+  label: Published
+  default: false
+  description: Set to off if you don’t want a specific post to show up when the site
+    is generated.

@@ -5,7 +5,8 @@ fields:
 - name: layout
   type: text
   config:
-    required: false
+    required: true
+    min: 1
   label: Layout
   description: Values could be default, page, post or custom layouts in the _layout
     dir.
@@ -13,30 +14,48 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
+    min: 1
   label: Title
   description: Page title.
 - name: heading
   type: text
   config:
     required: false
+    min: 
   label: Heading
   description: Page header.
 - name: subtitle
   type: text
   config:
     required: false
+    min: 
   label: Subtitle
   description: 'Subtitle or secondary heading. '
 - name: permalink
   type: text
   config:
     required: false
+    min: 1
   label: Permalink
   description: Link in the URI. For example /XYZ/ permalink in domain.com/XYZ.
+  default: "/XYZ"
 - name: published
   type: boolean
   label: Published
   description: Set to off if you don’t want a specific post to show up when the site
     is generated.
   default: false
+- name: sitemap
+  type: boolean
+  description: Toggle to add this page to the sitemap.xml.
+  label: Sitemap
+  default: true
+- name: robots-allow
+  type: boolean
+  label: Robots
+  description: Add this page to robot.txt.
+  default: true
+pages:
+- index.md
+- profiles.md
