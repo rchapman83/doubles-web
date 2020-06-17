@@ -47,4 +47,5 @@ fields:
     is generated.
   default: false
 pages:
+- index.md
 - profiles.md
