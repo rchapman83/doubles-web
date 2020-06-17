@@ -2,18 +2,23 @@
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+		<meta name="author" content="{{ site.author }}">
+		<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+		<meta name="keyphrases" content="">
+		<meta name="keywords" content="">
+		
+		<link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+		<link rel="stylesheet" href="{{ "/css/doubles-style.css" | prepend: site.baseurl }}">
+		<link rel="icon" href="{{ site.favicon }}">
+		<link type="text/plain" rel="author" href="{{ site.humans }}">
+		
+		<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 		{% seo %}
 		{% feed_meta %}
-
-		<!-- <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css"> 
-
-		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
-
+		<!-- 
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 			<script>
 				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
@@ -21,10 +26,9 @@
 				ga('send', 'pageview');
 			</script>
 			<script async src='https://www.google-analytics.com/analytics.js'></script>
-		{% endif %}-->
+		{% endif %} -->
 	</head>
 	<body>
-		{{ content }}
-		
+		{{ content }}	
 	</body>
 </html>
