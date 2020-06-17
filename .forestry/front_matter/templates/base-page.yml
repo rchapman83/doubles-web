@@ -51,6 +51,11 @@ fields:
   description: Toggle to add this page to the sitemap.xml.
   label: Sitemap
   default: true
+- name: robots-allow
+  type: boolean
+  label: Robots
+  description: Add this page to robot.txt.
+  default: true
 pages:
 - index.md
 - profiles.md
