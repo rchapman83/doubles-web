@@ -57,5 +57,3 @@ fields:
   default: false
   description: Set to off if you don’t want a specific post to show up when the site
     is generated.
-pages:
-- _posts/2020-06-14-.md
