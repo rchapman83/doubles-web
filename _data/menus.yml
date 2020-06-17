@@ -1,9 +1,10 @@
 ---
 header:
-  - url: /
-    title: Home
-    identifier: home
-  - url: /profiles
-    title: Profiles
-    identifier: profiles
----
+- url: "/profiles"
+  title: Profiles
+  identifier: profiles
+  weight: 2
+- url: "/"
+  title: Home
+  identifier: home
+  weight: 1
