@@ -62,7 +62,8 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - site.data.authors[authors]
     source:
       type: simple
       section: 
