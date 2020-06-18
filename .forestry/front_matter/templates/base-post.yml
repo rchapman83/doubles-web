@@ -57,5 +57,18 @@ fields:
   default: false
   description: Set to off if you don’t want a specific post to show up when the site
     is generated.
+- name: author
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
+  description: Select the author of the post.
 pages:
 - _posts/2020-06-14-First-post.md
