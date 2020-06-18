@@ -36,6 +36,21 @@ fields:
     display_utc: false
     export_format: YYYY/MM/DD h:mm A ZZ
   default: now
+- name: author
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - Rowan
+    - Jackson
+    source:
+      type: simple
+      section: ''
+      file: 
+      path: 
+  label: Author
+  description: Select the author of the post.
 - name: categories
   type: tag_list
   default: []
@@ -57,18 +72,6 @@ fields:
   default: false
   description: Set to off if you don’t want a specific post to show up when the site
     is generated.
-- name: author
-  type: select
-  default: []
-  config:
-    required: false
-    options: []
-    source:
-      type: post
-      section: authors
-      file: _data/authors.yml 
-      path: 
-  label: Author
-  description: Select an author for the blog post.
 pages:
 - _posts/2020-06-14-First-post.md
+- _posts/2020-06-18-second-one.md

@@ -1,8 +1,9 @@
 ---
 header:
-- url: "/blog"
+- title: Blog
+  identifier: blog
+  url: "/blog"
   weight: 2
-  title: Blog
 - title: Home
   identifier: home
   weight: 1
