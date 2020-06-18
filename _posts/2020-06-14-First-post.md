@@ -7,7 +7,7 @@ title: 'First Post '
 heading: yup, first one
 robots-allow: false
 sitemap: false
+author: _posts/2020-06-14-First-post.md
 published: true
-author: ''
 
 ---
