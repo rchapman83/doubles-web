@@ -11,8 +11,4 @@ author: Rowan
 published: true
 
 ---
-{% assign author = site.data.authors.authors[page.author] %}
-{% if author %}
-  <img src="{{ author.image }}">
-  <p>{{ author.name }}</p>
-{% endif %}
+Hey Hey
