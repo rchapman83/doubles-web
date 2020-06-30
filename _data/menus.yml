@@ -1,14 +1,14 @@
 ---
 header:
-- title: Blog
-  identifier: blog
-  url: "/blog"
+- title: Posts
+  identifier: posts
+  url: "/posts"
   weight: 2
 - title: Home
   identifier: home
   weight: 1
   url: "/"
-- title: Profiles
-  identifier: profiles
+- title: Doubles
+  identifier: doubles
   weight: 3
-  url: "/profiles"
+  url: "/doubles"

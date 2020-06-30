@@ -1,9 +1,9 @@
 ---
-permalink: "/blog"
+permalink: "/posts/"
 sitemap: true
 robots-allow: true
 layout: page
-title: Blog
+title: Posts
 heading: Blog
 subtitle: Post here
 published: true
