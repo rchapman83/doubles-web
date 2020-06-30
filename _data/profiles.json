@@ -1,0 +1,35 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "first_name": "Terry",
+            "last_name": "Wood",
+            "cards":[
+                {
+                    "num": 33,
+                    "desc": "Devin Booker Base"
+                },
+                {
+                    "num": 32,
+                    "desc": "Shaq special"  
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "first_name": "Ryan",
+            "last_name": "Bell",
+            "cards":[
+                {
+                    "num": 30,
+                    "desc": "Scotty pippin special"
+                },
+                {
+                    "num": 11,
+                    "desc": "Kevin Durant Base"  
+                }
+            ]
+        }
+    ]
+
+}
